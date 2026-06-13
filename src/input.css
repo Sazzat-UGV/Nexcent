@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@layer components {
+    .section-container {
+        @apply px-3 xl:px-30;
+    }
+}
+@theme {
+    --color-primary: #4CAF4F;
+    --color-secondary: #A5D6A7;
+}
