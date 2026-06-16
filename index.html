@@ -82,9 +82,9 @@
 
       <!-- Hero Section -->
       <section class="section-container py-10 lg:py-18">
-        <div class="flex flex-col sm:flex-row items-start lg:items-center">
+        <div class="flex flex-col-reverse  sm:flex-row items-start lg:items-center">
           <div class="w-full md:w-2/3">
-            <h1 class="text-5xl md:text-6xl font-semibold text-gray-600">
+            <h1 class="text-5xl md:text-6xl font-semibold text-gray-600 mt-10 md:mt-0">
               Lessons and insights
               <span class="text-primary">from 8 years</span>
             </h1>
@@ -98,8 +98,8 @@
               >Register</a
             >
           </div>
-          <div class="hidden md:block md:w-1/3 right">
-            <img src="./asset/Illustration.png" alt="" />
+          <div class="md:block w-full md:w-1/3 right">
+            <img src="./asset/Illustration.png" alt="" class="px-5 md:px-0" />
           </div>
         </div>
       </section>
@@ -124,7 +124,7 @@
           We have been working with some Forture 500+ clients
         </p>
       </div>
-      <div class="flex flex-row justify-between items-center mt-10">
+      <div class="flex flex-row flex-wrap justify-center md:justify-between items-center mt-10 space-x-2 space-y-4 md:space-x-0">
         <img src="./asset/clients/client1.png" alt="client-1" />
         <img src="./asset/clients/client2.png" alt="client-2" />
         <img src="./asset/clients/client3.png" alt="client-3" />
@@ -137,17 +137,17 @@
     <!-- Our Clients -->
 
     <!-- Community Section -->
-    <section class="section-container py-10">
+    <section class="section-container py-6 md:py-10">
       <div class="text-center flex flex-col items-center">
-        <h2 class="text-4xl font-semibold text-gray-600 w-xl">
+        <h2 class="text-2xl md:text-4xl font-semibold text-gray-600 w-full md:w-xl">
           Manage your entire community in a single system
         </h2>
         <p class="text-gray-600 mt-3 font-normal text-lg">
           Who is Nextcent suitable for?
         </p>
       </div>
-      <div class="flex flex-row justify-between items-center py-10 space-x-20">
-        <div class="shadow w-1/3 px-5 py-7 text-center rounded-xl">
+      <div class="flex flex-col md:flex-row justify-between items-center py-10 space-y-8 md:space-x-20">
+        <div class="shadow w-full md:w-1/3 px-5 py-7 text-center rounded-xl mx-auto md:mx-0">
           <div
             class="relative bg-tertiary w-16 h-16 rounded-tl-2xl rounded-br-2xl rounded-tr-md rounded-bl-md flex items-center justify-center mx-auto p-2 my-7"
           >
@@ -167,7 +167,7 @@
             </p>
           </div>
         </div>
-        <div class="shadow w-1/3 px-5 py-7 text-center rounded-xl">
+        <div class="shadow w-full md:w-1/3 px-5 py-7 text-center rounded-xl  mx-auto md:mx-0">
           <div
             class="relative bg-tertiary w-16 h-16 rounded-tl-2xl rounded-br-2xl rounded-tr-md rounded-bl-md flex items-center justify-center mx-auto p-2 my-7"
           >
@@ -187,7 +187,7 @@
             </p>
           </div>
         </div>
-        <div class="shadow w-1/3 px-5 py-7 text-center rounded-xl">
+        <div class="shadow w-full md:w-1/3 px-5 py-7 text-center rounded-xl  mx-auto md:mx-0">
           <div
             class="relative bg-tertiary w-16 h-16 rounded-tl-2xl rounded-br-2xl rounded-tr-md rounded-bl-md flex items-center justify-center mx-auto p-2 my-7"
           >
@@ -199,7 +199,7 @@
           </div>
           <div class="">
             <h2 class="text-4xl font-bold text-gray-600">
-              Clubs And <br />
+              Clubs And 
               Groups
             </h2>
             <p class="text-gray-600 mt-4 text-lg">
@@ -214,15 +214,18 @@
 
     <!-- Pixelgrade Section -->
     <section class="section-container">
-      <div class="flex justify-between items-center">
-        <div class="w-2/5 inset-0">
-          <img src="./asset/Frame 35.png" alt="" class="w-full" />
-        </div>
-        <div class="w-3/5">
-          <h2 class="text-5xl font-semibold text-gray-600">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+                  <h2 class=" block md:hidden text-center text-3xl md:text-5xl font-semibold text-gray-600">
             The unseen of spending three years at Pixelgrade
           </h2>
-          <p class="text-gray-600 my-8 text-md">
+        <div class="w-full md:w-2/5 inset-0">
+          <img src="./asset/Frame 35.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full md:w-3/5">
+          <h2 class="hidden md:block text-5xl font-semibold text-gray-600">
+            The unseen of spending three years at Pixelgrade
+          </h2>
+          <p class="text-gray-600 my-2 md:my-8 text-lg md:text-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
             amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
             Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
@@ -233,7 +236,7 @@
           <div class="">
             <button
               type="button"
-              class="text-white bg-primary hover:bg-green-700 transition duration-200 py-3 px-6 rounded-sm"
+              class="text-white bg-primary hover:bg-green-700 transition duration-200 py-3 px-6 rounded-sm my-5 md:my-0"
             >
               Learn More
             </button>
@@ -245,19 +248,19 @@
 
     <!-- Counter Section -->
     <section class="section-container bg-gray-100">
-      <div class="flex items-center justify-between py-12 space-x-56">
-        <div class="w-1/3">
+      <div class="flex flex-col md:flex-row items-center justify-between py-12 space-x-56">
+        <div class="w-full md:w-1/3 mx-auto md:mx-0">
           <h2 class="text-4xl w-96 font-semibold">
             Helping a local
             <span class="text-green-600">business reinvent itself</span>
           </h2>
-          <p class="text-gray-700 text-md mt-2">
+          <p class="text-gray-700 text-md md:text-sm mt-2">
             We reached here with our hard work and dedication
           </p>
         </div>
-        <div class="grid grid-cols-2 w-2/3 gap-x-20 gap-y-10">
-          <div class="">
-            <div class="flex flex-row items-center space-x-3">
+        <div class="grid grid-cols-2 w-full md:w-2/3 gap-x-6 md:gap-x-20 gap-y-10 mt-6 md:mt-0">
+          <div class="text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center space-x-3">
               <img src="./asset/counter/counter1.png" alt="" />
               <div class="">
                 <h3 class="text-gray-700 text-3xl font-bold">2,245,341</h3>
@@ -266,16 +269,16 @@
             </div>
           </div>
           <div class="">
-            <div class="flex flex-row items-center space-x-3">
+            <div class="flex flex-col md:flex-row items-center space-x-3">
               <img src="./asset/counter/counter2.png" alt="" />
-              <div class="">
+              <div class="text-center md:text-left">
                 <h3 class="text-gray-700 text-3xl font-bold">46,328</h3>
                 <p class="text-gray-500">Clubs</p>
               </div>
             </div>
           </div>
-          <div class="">
-            <div class="flex flex-row items-center space-x-3">
+          <div class="text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center space-x-3">
               <img src="./asset/counter/counter3.png" alt="" />
               <div class="">
                 <h3 class="text-gray-700 text-3xl font-bold">828,867</h3>
@@ -283,8 +286,8 @@
               </div>
             </div>
           </div>
-          <div class="">
-            <div class="flex flex-row items-center space-x-3">
+          <div class="text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center space-x-3">
               <img src="./asset/counter/counter4.png" alt="" />
               <div class="">
                 <h3 class="text-gray-700 text-3xl font-bold">1,926,436</h3>
@@ -299,15 +302,15 @@
 
     <!-- Design Site Section -->
     <section class="section-container">
-      <div class="flex justify-between items-center">
-        <div class="w-2/5 inset-0">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="w-full md:w-2/5 inset-0">
           <img src="./asset/pana.png" alt="" class="w-full p-10" />
         </div>
-        <div class="w-3/5">
-          <h2 class="text-5xl font-semibold text-gray-600">
+        <div class="w-full md:w-3/5">
+          <h2 class="text-4xl md:text-5xl font-semibold text-gray-600">
             How to design your site footer like we did
           </h2>
-          <p class="text-gray-600 my-8 text-md">
+          <p class="text-gray-600 my-4 md:my-8 text-lg md:text-xl">
             Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
             augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
             elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
@@ -318,7 +321,7 @@
             hendrerit venenatis libero. Donec consectetur faucibus ipsum id
             gravida.
           </p>
-          <div class="">
+          <div class="mb-5">
             <button
               type="button"
               class="text-white bg-primary hover:bg-green-700 transition duration-200 py-3 px-6 rounded-sm"
@@ -333,12 +336,12 @@
 
     <!-- Testimonial Section -->
     <section class="section-container bg-gray-100">
-      <div class="flex flex-row justify-between items-center py-6 space-x-15">
-        <div class="w-1/4">
-          <img src="./asset/image 9.png" alt="" class="w-full" />
+      <div class="flex flex-col md:flex-row justify-between mx-auto items-center py-6 space-x-15">
+        <div class="w-full md:w-1/4 text-center">
+          <img src="./asset/image 9.png" alt="" class="w-full self-center" />
         </div>
-        <div class="w-3/4">
-          <p class="text-gray-500 text-md font-semibold">
+        <div class="w-full md:w-3/4">
+          <p class="text-gray-500 text-lg md:text-md font-semibold">
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
             enim metus. Vivamus sed libero ornare, tristique quam in, gravida
@@ -526,92 +529,95 @@
     <!-- Demo Section -->
 
     <!-- Footer Section -->
-    <footer class="section-container bg-gray-800 text-white">
-      <div class="flex flex-row space-x-10 pt-20 pb-16">
-        <div class="w-2/5">
+    <footer class="section-container bg-cblack text-white">
+      <div class="flex flex-col-reverse md:flex-row space-x-10 pt-20 pb-16">
+        <div class="w-full md:w-2/5 ">
           <div class="">
             <img src="./asset/Logo2.png" alt="" />
-            <p class="mt-10 leading-7 mb-10">
-              Copyright © 2020 Nexcent ltd. <br />
-              All rights reserved
-            </p>
-            <div class="flex flex-row space-x-5 items-center">
-              <div
-                class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-                  />
-                </svg>
-              </div>
-              <div
-                class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-                  />
-                </svg>
-              </div>
-              <div
-                class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-                  />
-                </svg>
-              </div>
-              <div
-                class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-                  />
-                </svg>
-              </div>
-            </div>
+  <div class="flex flex-col-reverse md:flex-col">
+    <p class="mt-10 leading-7 mb-10">
+      Copyright © 2020 Nexcent ltd. <br />
+      All rights reserved
+    </p>
+    <div class="flex flex-row space-x-5 items-center">
+      <div
+        class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+          />
+        </svg>
+      </div>
+      <div
+        class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+          />
+        </svg>
+      </div>
+      <div
+        class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+          />
+        </svg>
+      </div>
+      <div
+        class="bg-bgray w-9 h-9 rounded-full flex justify-center items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+          />
+        </svg>
+      </div>
+    </div>
+
+  </div>
           </div>
         </div>
-        <div class="w-3/5 grid grid-cols-3 gap-x-3">
+        <div class="w-full md:w-3/5  grid grid-cols-1 md:grid-cols-3 gap-x-3">
           <div class="">
             <p class="text-xl font-semibold mb-5">Company</p>
             <ul class="flex flex-col space-y-2">
